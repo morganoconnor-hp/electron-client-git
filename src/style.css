@@ -1,0 +1,95 @@
+body {
+    font: caption;
+    background: lightslategrey;
+}
+
+.input-group {
+    border: 1px solid gray;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+.no-padding-margin {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.border-right {
+    border-right: 1px grey solid;
+    font-size: 12px;
+}
+
+.navbar {
+    margin-bottom: 2%;
+}
+
+.tree-files {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-group {
+    padding: 0;
+}
+
+.list-group p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list-group-item {
+    border: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: transparent;
+}
+
+#treeFiles {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#treeFiles:last-child {
+    padding-bottom: 10px;
+}
+
+#treeFiles li {
+    list-style: none;
+}
+
+.icon-file-tree{
+    display: flex;
+    flex-direction: row;
+    max-width: 300px;
+    font-size: 10px;
+}
+
+.btn {
+    font-size: 10px;
+}
+
+/************************************************/
+/*********           OVERFLOW           *********/
+/************************************************/
+
+/* width */
+#treeFiles::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+#treeFiles::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+#treeFiles::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+#treeFiles::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
